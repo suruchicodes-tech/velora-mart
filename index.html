@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velora Mart is a clean, responsive online shopping marketplace with real product images, cart, wishlist, checkout, login, orders, and admin dashboard." />
+    <meta name="theme-color" content="#2563EB" />
+    <title>Velora Mart | Online Shopping Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header marketplace-header">
+      <div class="header-top">
+        <div class="store-switch">
+          <a class="brand store-pill" href="#home" data-page-link="home" aria-label="Velora Mart home">
+            <img src="assets/logo-fashion-store.png" alt="Velora Mart logo" />
+            <span>Velora Mart</span>
+          </a>
+          <button class="store-pill muted-pill" type="button">★ Marketplace</button>
+        </div>
+        <div class="delivery-chip">● Location not set <button type="button">Select delivery location ›</button></div>
+      </div>
+      <div class="header-main">
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <label class="top-search" aria-label="Search products">
+          <span>⌕</span>
+          <input id="topSearch" type="search" placeholder="Search Velora Mart products, brands and categories" />
+        </label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home" data-page-link="home">Home</a>
+          <a href="#products" data-page-link="products">Products</a>
+          <a href="#orders" data-page-link="orders">Orders</a>
+          <a href="#admin" data-page-link="admin">Admin</a>
+          <a href="#auth" data-page-link="auth">Login</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">◐</button>
+          <button class="cart-btn" type="button" data-page-link="cart">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page active" id="home">
+        <section class="market-category-strip" aria-label="Popular categories">
+          <button type="button" data-category-shortcut="All"><span>▣</span><strong>For You</strong></button>
+          <button type="button" data-category-shortcut="Women Fashion"><span>♕</span><strong>Fashion</strong></button>
+          <button type="button" data-category-shortcut="Beauty Accessories"><span>✦</span><strong>Beauty</strong></button>
+          <button type="button" data-category-shortcut="Shoes & Slippers"><span>◒</span><strong>Shoes</strong></button>
+          <button type="button" data-category-shortcut="Stationery"><span>▤</span><strong>Books & Stationery</strong></button>
+          <button type="button" data-category-shortcut="Women Bags"><span>◧</span><strong>Bags</strong></button>
+          <button type="button" data-category-shortcut="Women Heels"><span>◇</span><strong>Women Heels</strong></button>
+          <button type="button" data-category-shortcut="Gift Sets"><span>✺</span><strong>Gift Sets</strong></button>
+        </section>
+
+        <section class="deal-gallery" aria-label="Featured deals">
+          <article class="deal-card yellow-deal">
+            <div>
+              <span>GRWM SALE</span>
+              <h2>Women Heels Under ₹999</h2>
+              <p>Fresh party-ready picks</p>
+            </div>
+            <img src="assets/products/5-aura-crystal-multi-strap-lucite-block-heel-sandals-5-0-original-imahnnvhduxzjxjx.webp" alt="Women heels deal" />
+          </article>
+          <article class="deal-card blue-deal">
+            <div>
+              <span>NEW COLLECTION</span>
+              <h2>Shoes From ₹599</h2>
+              <p>Comfort styles for daily wear</p>
+            </div>
+            <img src="assets/products/6-rng-854-beige-6-bruton-beige-resized-2-original-imahbgyzxr6ygvye.webp" alt="Shoes deal" />
+          </article>
+          <article class="deal-card dark-deal">
+            <div>
+              <span>STATIONERY</span>
+              <h2>Study Essentials</h2>
+              <p>Books, planners and supplies</p>
+            </div>
+            <img src="assets/products/spiral-a4-notebook-set-of-5-up-plain-a4-nb-200p-5-uniqpal-original-imahaytryvzhm42p.webp" alt="Stationery deal" />
+          </article>
+        </section>
+
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Velora Mart Deals</p>
+            <h1>Online Shopping Marketplace for fashion, beauty, bags, gifts, and daily essentials.</h1>
+            <p>
+              A responsive e-commerce platform with role-based login, product browsing, wishlist, cart, checkout,
+              orders, and admin dashboard features.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" type="button" data-page-link="products">Shop Products</button>
+              <button class="secondary-btn" type="button" data-page-link="admin">View Admin Panel</button>
+            </div>
+            <div class="hero-features">
+              <span>Secure Auth</span>
+              <span>Wishlist</span>
+              <span>Responsive Design</span>
+              <span>Order Tracking</span>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="assets/products/xl-drs-green-floral-01-sadhnazon-original-imahhykfg8nrhjxf.webp" alt="Green floral dress on Velora Mart" />
+            <div class="floating-card">
+              <strong>Fresh Arrivals</strong>
+              <span>Real products from ₹249</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Categories</p>
+              <h2>Shop by category</h2>
+            </div>
+            <button class="text-btn" type="button" data-page-link="products">View all</button>
+          </div>
+          <div class="category-grid" id="categoryGrid"></div>
+        </section>
+
+        <section class="section split-feature">
+          <img src="assets/boutique-rack.jpg" alt="Boutique fashion rack" />
+          <div>
+            <p class="eyebrow">User Features</p>
+            <h2>Everything a shopping platform needs.</h2>
+            <div class="feature-grid">
+              <span>Register</span><span>Login</span><span>Logout</span><span>Forgot Password</span>
+              <span>Search Products</span><span>Filter by Category</span><span>Sort by Price</span><span>Wishlist</span>
+              <span>Add to Cart</span><span>Update Quantity</span><span>Checkout</span><span>Order History</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Featured Products</p>
+              <h2>Popular picks</h2>
+            </div>
+          </div>
+          <div class="product-grid" id="featuredProducts"></div>
+        </section>
+      </section>
+
+      <section class="page" id="auth">
+        <div class="auth-layout">
+          <div class="auth-card">
+            <div class="tabs">
+              <button class="tab active" type="button" data-auth-tab="login">Login</button>
+              <button class="tab" type="button" data-auth-tab="register">Register</button>
+            </div>
+            <form class="auth-form active" id="loginForm">
+              <h2>Welcome back</h2>
+              <label>Email<input type="email" placeholder="user@example.com" required /></label>
+              <label>Password<input type="password" placeholder="Enter password" required /></label>
+              <label class="inline"><input type="checkbox" /> Remember me</label>
+              <button class="primary-btn" type="submit">Login as User</button>
+              <button class="secondary-btn" type="button" id="adminLogin">Login as Admin</button>
+              <a href="#auth">Forgot Password?</a>
+            </form>
+            <form class="auth-form" id="registerForm">
+              <h2>Create account</h2>
+              <label>Full Name<input type="text" placeholder="Your name" required /></label>
+              <label>Email<input type="email" placeholder="you@example.com" required /></label>
+              <label>Password<input type="password" placeholder="Create password" required /></label>
+              <button class="primary-btn" type="submit">Register</button>
+              <p class="note">Email confirmation link will be sent after registration.</p>
+            </form>
+          </div>
+          <img src="assets/fashion-silhouette.jpg" alt="Fashion shopping silhouette" />
+        </div>
+      </section>
+
+      <section class="page" id="products">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Products</p>
+              <h2>Browse collection</h2>
+            </div>
+            <button class="secondary-btn" type="button" id="clearFilters">Clear Filters</button>
+          </div>
+          <div class="shop-tools">
+            <input id="searchInput" type="search" placeholder="Search products, bags, shoes..." />
+            <select id="categoryFilter" aria-label="Filter category"></select>
+            <select id="sortFilter" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="new">New Arrivals</option>
+            </select>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+          <div class="pagination" id="pagination"></div>
+        </section>
+      </section>
+
+      <section class="page" id="details">
+        <section class="section details-wrap" id="detailsWrap"></section>
+      </section>
+
+      <section class="page" id="cart">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Cart</p>
+              <h2>Your shopping cart</h2>
+            </div>
+          </div>
+          <div class="cart-layout">
+            <div id="cartItems" class="cart-items"></div>
+            <aside class="summary-card">
+              <h3>Order Summary</h3>
+              <p>Subtotal <strong id="subtotal">₹0</strong></p>
+              <p>Shipping <strong>₹99</strong></p>
+              <p class="total">Total <strong id="total">₹0</strong></p>
+              <button class="primary-btn" type="button" data-page-link="checkout">Proceed to Checkout</button>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="checkout">
+        <section class="section checkout-layout">
+          <form class="checkout-card" id="checkoutForm">
+            <p class="eyebrow">Checkout</p>
+            <h2>Delivery details</h2>
+            <label>Full Name<input type="text" placeholder="Customer name" required /></label>
+            <label>Address<textarea placeholder="House no, city, state" required></textarea></label>
+            <label>Payment Method<select><option>Cash on Delivery</option><option>UPI</option><option>Card</option></select></label>
+            <button class="primary-btn" type="submit">Place Order</button>
+          </form>
+          <div class="checkout-card">
+            <h3>Email Confirmation</h3>
+            <p>After placing order, a confirmation email screen is simulated for the customer.</p>
+            <img src="assets/shopping-bags-girl.jpg" alt="Girl holding shopping bags" />
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="orders">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">My Orders</p>
+              <h2>Order history</h2>
+            </div>
+          </div>
+          <div class="orders-list" id="ordersList"></div>
+        </section>
+      </section>
+
+      <section class="page" id="admin">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Admin Panel</p>
+              <h2>Dashboard and management</h2>
+            </div>
+            <span class="role-badge">Role: Admin</span>
+          </div>
+          <div class="admin-stats">
+            <article><span>Total Products</span><strong id="adminProducts">0</strong></article>
+            <article><span>Total Users</span><strong>128</strong></article>
+            <article><span>Total Orders</span><strong id="adminOrders">0</strong></article>
+          </div>
+          <div class="admin-grid">
+            <form class="admin-card" id="productForm">
+              <h3>Product Management</h3>
+              <label>Product Name<input id="adminName" type="text" placeholder="Product name" required /></label>
+              <label>Category<select id="adminCategory"></select></label>
+              <label>Price<input id="adminPrice" type="number" placeholder="1299" required /></label>
+              <label>Product Image Upload<input id="imageUpload" type="file" accept="image/*" /></label>
+              <img id="uploadPreview" class="upload-preview" src="assets/logo-fashion-script.jpg" alt="Uploaded product preview" />
+              <button class="primary-btn" type="submit">Add Product</button>
+            </form>
+            <div class="admin-card">
+              <h3>Order Management</h3>
+              <div id="adminOrdersList"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer marketplace-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>ABOUT</h3>
+          <a href="#contact">Contact Us</a>
+          <a href="#home">About Us</a>
+          <a href="#products">Fashion Stories</a>
+          <a href="#admin">Corporate Information</a>
+        </div>
+        <div>
+          <h3>GROUP COMPANIES</h3>
+          <a href="#products">StyleKart</a>
+          <a href="#products">TrendTrip</a>
+          <a href="#products">ShopStyle</a>
+        </div>
+        <div>
+          <h3>HELP</h3>
+          <a href="#checkout">Payments</a>
+          <a href="#orders">Shipping</a>
+          <a href="#orders">Cancellation & Returns</a>
+          <a href="#auth">FAQ</a>
+        </div>
+        <div>
+          <h3>CONSUMER POLICY</h3>
+          <a href="#orders">Cancellation & Returns</a>
+          <a href="#home">Terms Of Use</a>
+          <a href="#home">Security</a>
+          <a href="#home">Privacy</a>
+          <a href="#home">Sitemap</a>
+        </div>
+        <div class="mail-col">
+          <h3>Mail Us:</h3>
+          <p>Velora Mart Internet Private Limited,<br />Style Commerce Hub,<br />Patna, Bihar, India</p>
+          <h3>Social:</h3>
+          <div class="social-row"><span>f</span><span>𝕏</span><span>▶</span><span>◎</span></div>
+        </div>
+        <div class="mail-col">
+          <h3>Registered Office Address:</h3>
+          <p>Velora Mart Internet Private Limited,<br />Rohtas, Bihar, India<br />CIN: U52100BR2026PTC000001<br />Telephone: 044-45614700</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>▣ Become a Seller</span>
+        <span>✦ Advertise</span>
+        <span>▣ Gift Cards</span>
+        <span>ⓘ Help Center</span>
+        <strong>© 2026 VeloraMart.com</strong>
+        <span class="payment-icons">VISA · UPI · COD · EMI</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
