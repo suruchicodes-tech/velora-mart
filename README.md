@@ -19,3 +19,4 @@ Velora Mart is a responsive E-Commerce website developed using HTML, CSS, and Ja
 ## Author
 
 Suruchi
+Updated
